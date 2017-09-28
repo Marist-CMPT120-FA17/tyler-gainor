@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<!-- Tyler Gainor Project #2 Intro to Programming creating a text adventure. Due date of assignment September 28th-->
+	<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	
+	<title> 
+		Adventure Time: Marist 
+	</title>
+	
+	<h1> <font color="green"/> <u>Adventure Time: Marist</u>
+	<br>
+	<i>Feel free to message me if you get stuck at</i> <a href="mailto:tyler.gainor1@marist.edu">Email me here</a></font>
+	</h1>
+		
+	<script type="text/javascript">
+		
+		function North() { 
+			var textarea = document.getElementById("message"); 
+			textarea.value = "The player is in Fonatiane Hall, this it not the correct buliding for Intro to Programming. Try again!" 
+			} 
+		function South() {
+			var textarea = document.getElementById("message");
+			textarea.value = "The player is at McCann Center, this it not the correct buliding for Intro to Programming. Try again!"
+			}
+		function East() {
+			var textarea = document.getElementById("message");
+			textarea.value = "The player is at Hancock Center, you found the class on time. Congrats!!"
+			}
+		function West() {
+			var textarea = document.getElementById("message");
+			textarea.value = "The player is at Dyson, this it not the correct buliding for Intro to Programming. Try again!"
+			}
+			
+			<!-- Global variable-->
+			var score=0 
+
+		</script>	
+	<body bgcolor="black">
+	
+
+		<input type="button"
+			   value="North" 
+			   onclick="North();"
+		 </input>
+		
+		<input type="button"
+			   value="South"
+			   onclick="South();"
+		</input>
+		
+		<input type="button"
+			   value="East"
+			   onclick="East();"
+		</input>
+		
+		<input type="button"
+			   value="West"
+			   onclick="West();"
+		</input>
+				
+		<p><textarea rows="5" cols="40" id="message"> You start at the main enterance of Marist College right by Tenney Stadium. Objective is to make it to class on time, hurry up!
+		</textarea>
+		</p>
+			<p> <font color="green"/>Score=0
+				</font>
+			</p>
+			
+	</body>
+</html>
